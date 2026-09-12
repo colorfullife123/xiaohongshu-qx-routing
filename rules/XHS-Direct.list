@@ -1,0 +1,8 @@
+# Xiaohongshu media/download traffic -> DIRECT
+# Keep bandwidth-heavy media on the local connection.
+
+host-suffix, xhscdn.com, direct
+host, t2.xiaohongshu.com, direct
+host, apm-native.xiaohongshu.com, direct
+host, rec.xiaohongshu.com, direct
+host, www.xiaohongshu.com, direct
