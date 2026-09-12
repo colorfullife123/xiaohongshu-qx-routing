@@ -1,0 +1,5 @@
+# Xiaohongshu publish/upload traffic -> proxy
+# Recommended to mount with force-policy=<your proxy policy>.
+
+host, ros-upload.xiaohongshu.com, proxy
+host, edith.xiaohongshu.com, proxy
