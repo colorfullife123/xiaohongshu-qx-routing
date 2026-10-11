@@ -8,7 +8,7 @@ Quantumult X 小红书精准发布分流。目标：
 - **发送评论与回复评论**跟随 `📤 小红书上传`，避免评论显示本地 IP 属地；
 - 可在 Quantumult X 的 `📤 小红书上传` 中自由选择任意节点 / `proxy` / `direct`。
 
-## v2.3.0：Strict IP 一致性模式
+## v2.3.1：Strict IP 冲突修复
 
 **推荐 iOS App 使用 Strict 模式；精准 Path 模式保留为实验/低代理流量模式。**
 
@@ -71,7 +71,7 @@ Quantumult X 设置：
 - **把它排在 XHS-Direct.list 前面**
 - **关闭 `小红书精准发布` Rewrite，避免同一请求被脚本再次 relay**
 
-Strict 模式会把所有 `*.xiaohongshu.com` API 连接送到 `📤 小红书上传`。这包括发布、评论发送、评论读取、推荐和普通 API，因此不会再依赖 App 内部 Path。大流量媒体仍由 `*.xhscdn.com` 的 DIRECT 规则直连。
+Strict 模式会把所有 `*.xiaohongshu.com` API 连接送到 `📤 小红书上传`。这包括发布、评论发送、评论读取、推荐和普通 API，因此不会再依赖 App 内部 Path。大流量媒体仍由 `*.xhscdn.com` 的 DIRECT 规则直连。**v2.3.1 起，`XHS-Direct.list` 只保留 `*.xhscdn.com`，不再包含 `edith/t2/rec/www/apm-native`，因此不会再与 Strict 规则冲突。**
 
 > 如果平台的 IP 属地来自近期会话/账号活动而不只是单个评论 POST，Strict 模式也比“只代理评论 POST”更可靠，因为相关 API 会话都保持同一出口。
 
@@ -135,10 +135,10 @@ Quantumult X 策略页打开 `📤 小红书上传`，可直接选择某个具�
 | App `.../comment/post|create|reply|send` | `📤 小红书上传`（发送/回复评论） |
 | `edith` 评论列表 `list/page` / 详情 / 普通 API | DIRECT |
 | `*.xhscdn.com` | DIRECT |
-| `t2.xiaohongshu.com` | DIRECT |
-| `apm-native.xiaohongshu.com` | DIRECT |
-| `rec.xiaohongshu.com` | DIRECT |
-| `www.xiaohongshu.com` | DIRECT |
+| `t2.xiaohongshu.com` | `📤 小红书上传`（Strict） |
+| `apm-native.xiaohongshu.com` | `📤 小红书上传`（Strict） |
+| `rec.xiaohongshu.com` | `📤 小红书上传`（Strict） |
+| `www.xiaohongshu.com` | `📤 小红书上传`（Strict） |
 
 ## 验证
 
@@ -190,3 +190,27 @@ flclash/
 ## License
 
 MIT
+
+
+## v2.3.1 实机判定
+
+如果 Quantumult X 网络活动里仍出现：
+
+```text
+HOST, EDITH.XIAOHONGSHU.COM, DIRECT
+HOST, T2.XIAOHONGSHU.COM, DIRECT
+```
+
+说明本机仍在使用旧版 `XHS-Direct.list` 缓存或还有其他规则在抢先 DIRECT。
+
+刷新 v2.3.1 后，正确结果应类似：
+
+```text
+HOST-SUFFIX, XIAOHONGSHU.COM, 📤 小红书上传
+```
+
+而媒体 CDN 才应显示：
+
+```text
+HOST-SUFFIX, XHSCDN.COM, DIRECT
+```
