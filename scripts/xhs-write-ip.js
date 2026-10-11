@@ -1,17 +1,14 @@
 /**
- * Xiaohongshu Quantumult X rewrite-only IP relay
- * v2.4.0 - 2026-10-11
+ * Xiaohongshu Quantumult X smart write-action IP relay
+ * v2.4.1 - 2026-10-11
  *
- * Designed for script-analyze-echo-response on edith.xiaohongshu.com.
- * Quantumult X does not execute body-related rewrites when the request body
- * is empty, so normal body-less GET traffic is not relayed by this script.
- *
- * Every matched body-bearing API request is replayed once through the
- * user-selected policy. This avoids depending on unstable private App paths
- * for note publishing and comment publishing.
+ * Rewrite still observes body-bearing edith.xiaohongshu.com requests, but
+ * only write actions are sent through the selected Xiaohongshu policy.
+ * Read/list/page/query/detail traffic is replayed DIRECT.
  */
 
 const DEFAULT_POLICY = "📤 小红书上传";
+const DIRECT_POLICY = "direct";
 
 function readVariables() {
   try {
@@ -66,21 +63,87 @@ function statusLine(code) {
   return `HTTP/1.1 ${code} ${reasons[code] || ""}`.trim();
 }
 
+function requestPath() {
+  if ($request.path) return String($request.path).split("?")[0];
+  const url = String($request.url || "");
+  return url.replace(/^https?:\/\/[^/]+/i, "").split("?")[0] || "/";
+}
+
+function classifyRequest(method, path, body) {
+  const p = String(path || "").toLowerCase();
+  const b = String(body || "").toLowerCase();
+
+  if (method === "GET" || method === "HEAD" || method === "OPTIONS") {
+    return { type: "read", reason: "safe-method" };
+  }
+
+  // Explicit write actions.
+  if (/\/api\/media\/v\d+\/upload\/capa\/permit(?:\/|$)/.test(p)) {
+    return { type: "write", reason: "upload-permit" };
+  }
+
+  // Known final note submission path and common version variants.
+  if (/\/api\/sns\/v\d+\/note(?:\/)?$/.test(p)) {
+    return { type: "write", reason: "note-submit" };
+  }
+
+  if (/\/(?:comment|note\/comment)\/(?:post|create|reply|send|submit)(?:\/|$)/.test(p)) {
+    return { type: "write", reason: "comment-write-path" };
+  }
+
+  if (/\/(?:publish|post|create|reply|send|submit)(?:\/|$)/.test(p)) {
+    return { type: "write", reason: "write-verb-path" };
+  }
+
+  // Comment-write body fallback for App versions whose path name changed.
+  const hasCommentText =
+    /"(?:content|comment_content|text)"\s*:/.test(b);
+  const hasCommentTarget =
+    /"(?:note_id|target_comment_id|comment_id|root_comment_id)"\s*:/.test(b);
+
+  if (/comment/.test(p) && hasCommentText && hasCommentTarget) {
+    return { type: "write", reason: "comment-write-body" };
+  }
+
+  // Explicit read/browse actions, even when implemented as POST.
+  if (
+    /\/(?:page|list|query|detail|feed|search|recommend|messages?|history|status|count|unread|collect|batch|get|info)(?:\/|$)/.test(p) ||
+    /\/comment\/(?:page|list|query|detail|sub_comments?)(?:\/|$)/.test(p) ||
+    /\/api\/im\//.test(p)
+  ) {
+    return { type: "read", reason: "read-path" };
+  }
+
+  // Unknown body-bearing calls default DIRECT so simply opening/browsing
+  // Xiaohongshu does not consume the selected upload/publish proxy.
+  return { type: "read", reason: "unknown-default-direct" };
+}
+
 const vars = readVariables();
-const policy = vars.policy || DEFAULT_POLICY;
+const selectedPolicy = vars.policy || DEFAULT_POLICY;
+const method = ($request.method || "POST").toUpperCase();
+const path = requestPath();
+const body = typeof $request.body === "string" ? $request.body : "";
+const classification = classifyRequest(method, path, body);
+const routePolicy = classification.type === "write"
+  ? selectedPolicy
+  : DIRECT_POLICY;
 
 const req = {
   url: $request.url,
-  method: ($request.method || "POST").toUpperCase(),
+  method,
   headers: cleanRequestHeaders($request.headers),
-  opts: { policy }
+  opts: { policy: routePolicy }
 };
 
 if (typeof $request.body === "string") {
   req.body = $request.body;
 }
 
-console.log(`[XHS-QX v2.4] relay ${req.method} ${req.url} via ${policy}`);
+console.log(
+  `[XHS-QX v2.4.1] ${classification.type.toUpperCase()} ${method} ${path} ` +
+  `reason=${classification.reason} via ${routePolicy}`
+);
 
 $task.fetch(req).then(response => {
   const code = Number(response.statusCode || 200);
@@ -93,9 +156,9 @@ $task.fetch(req).then(response => {
   const message = String(
     reason && (reason.error || reason.message || reason) || "unknown error"
   );
-  console.log(`[XHS-QX v2.4] relay failed: ${message}`);
+  console.log(`[XHS-QX v2.4.1] relay failed: ${message}`);
   try {
-    $notify("小红书发布 IP 分流失败", policy, message);
+    $notify("小红书 IP 分流失败", routePolicy, message);
   } catch (_) {}
 
   $done({
@@ -103,7 +166,7 @@ $task.fetch(req).then(response => {
     headers: { "Content-Type": "application/json; charset=utf-8" },
     body: JSON.stringify({
       ok: false,
-      error: "xhs_qx_rewrite_ip_relay_failed",
+      error: "xhs_qx_smart_relay_failed",
       detail: message
     })
   });
