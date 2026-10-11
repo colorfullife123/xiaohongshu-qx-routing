@@ -1,0 +1,8 @@
+# Xiaohongshu Quantumult X precise publish routing v2.0.0
+# Requires Quantumult X MITM for edith.xiaohongshu.com.
+# Only upload permit + final note creation are replayed through the selected policy.
+# Comments/detail/normal edith APIs are NOT matched and remain on normal filter rules.
+
+hostname = edith.xiaohongshu.com
+^https:\/\/edith\.xiaohongshu\.com\/api\/media\/v1\/upload\/capa\/permit(?:\?.*)?$ url script-analyze-echo-response https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/scripts/xhs-publish-route.js#policy=%F0%9F%8E%AF%20%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%8F%91%E5%B8%83%E5%87%BA%E5%8F%A3
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/note(?:\?.*)?$ url script-analyze-echo-response https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/scripts/xhs-publish-route.js#policy=%F0%9F%8E%AF%20%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%8F%91%E5%B8%83%E5%87%BA%E5%8F%A3
