@@ -1,0 +1,5 @@
+# Legacy host-level routing fallback (no MITM required)
+# WARNING: edith also carries comments/detail APIs, so those will use the proxy too.
+
+host, ros-upload.xiaohongshu.com, proxy
+host, edith.xiaohongshu.com, proxy
