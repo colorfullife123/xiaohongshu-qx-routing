@@ -1,0 +1,9 @@
+# Xiaohongshu Quantumult X strict IP-consistency mode v2.3.0
+# Import as FILTER resource and set Policy Override to: 📤 小红书上传
+#
+# Purpose: guarantee that all Xiaohongshu API traffic uses the selected exit,
+# avoiding missed App-only comment/publish endpoints and recent-session IP attribution.
+#
+# Media CDN (*.xhscdn.com) is NOT included here and should remain DIRECT.
+
+host-suffix, xiaohongshu.com, proxy
