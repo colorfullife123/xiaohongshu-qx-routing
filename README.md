@@ -7,7 +7,7 @@ Quantumult X 小红书精准发布分流。目标：
 - 评论、详情、推荐流及媒体 CDN 保持 DIRECT；
 - 可在 Quantumult X 的 `📤 小红书上传` 中自由选择任意节点 / `proxy` / `direct`。
 
-## v2.1.0：自定义策略 + 精准发布模式
+## v2.1.1：Quantumult X UI 自定义策略模式
 
 旧版把 `edith.xiaohongshu.com` 整个 Host 送进代理。由于评论、详情和发布 API 共用这个 Host，会导致评论区也误走代理。
 
@@ -22,6 +22,28 @@ v2.0.0 改成两层：
 这两个 edith 请求通过 `script-analyze-echo-response` 捕获，再由 `$task.fetch(... opts.policy ...)` 仅对该请求指定 `📤 小红书上传`。其余 `edith.xiaohongshu.com` 请求继续命中 DIRECT。
 
 因此 QX 版不再需要 FlClash 那种“发布前切香港 → 30 秒后恢复”的计时器：**策略作用域本身就是单次发布请求。**
+
+
+> **重要：不要把 `XHS-Upload.list` 打开“策略”开关。** 该文件是过滤规则，不包含节点；Quantumult X 会显示“无数据”。“策略 / as-policy”只应该用于节点/服务器订阅资源。
+
+### 推荐：完全通过 Quantumult X UI 创建 `📤 小红书上传`
+
+如果你不想编辑主配置的 `[policy]`，请在 Quantumult X 的**节点资源 / 服务器订阅**中：
+
+1. 找到你当前正在使用的机场节点订阅。
+2. **复制一份该订阅资源**（不要改原来的那份）。
+3. 把复制后的资源名称/Tag 改为 `📤 小红书上传`。
+4. 打开该资源的 **“策略”** 开关，使其作为一个 `static` 自定义策略出现。
+5. 资源解析器保持与你原机场订阅相同；如果原订阅需要解析器，这份复制资源也要开启同一个解析器。
+6. 策略图标使用：
+
+```text
+https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/614a3182d41ffe15eb8b9d7485855e99cf1dca31/assets/xiaohongshu-policy.png
+```
+
+完成后，Quantumult X 的“自定义策略”中会出现 `📤 小红书上传`，里面就是该机场订阅的节点，可以直接点选香港或其他节点。
+
+随后再添加 `resources/XHS-Upload.list` 时，**不要开启它自己的“策略”开关**，只把“策略覆盖 / force-policy”指向 `📤 小红书上传`。
 
 ## 已确认的发布链
 
