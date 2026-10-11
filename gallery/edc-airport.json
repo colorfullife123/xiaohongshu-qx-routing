@@ -1,0 +1,38 @@
+{
+  "name": "EDC · 机场服务",
+  "description": "源自 erdongchanyo/icon 的 机场服务 图标。",
+  "icons": [
+    {
+      "name": "baiyueguang",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Airport/baiyueguang.png"
+    },
+    {
+      "name": "EDC",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Airport/EDC.png"
+    },
+    {
+      "name": "Element",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Airport/Element.png"
+    },
+    {
+      "name": "huacloud",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Airport/huacloud.png"
+    },
+    {
+      "name": "Hxlm",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Airport/Hxlm.png"
+    },
+    {
+      "name": "Prpr",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Airport/Prpr.png"
+    },
+    {
+      "name": "Skicat",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Airport/Skicat.png"
+    },
+    {
+      "name": "Ssp",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Airport/Ssp.png"
+    }
+  ]
+}

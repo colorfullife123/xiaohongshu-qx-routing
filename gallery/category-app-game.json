@@ -1,0 +1,170 @@
+{
+  "name": "QX · App 与游戏",
+  "description": "应用商店、社交应用、游戏、游戏平台。",
+  "icons": [
+    {
+      "name": "App_Store",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/App_Store.png"
+    },
+    {
+      "name": "Apple_Fitness",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness.png"
+    },
+    {
+      "name": "Apple_News",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_News.png"
+    },
+    {
+      "name": "Clubhouse_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse_1.png"
+    },
+    {
+      "name": "Clubhouse_2",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse_2.png"
+    },
+    {
+      "name": "Clubhouse",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse.png"
+    },
+    {
+      "name": "Cydia",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cydia.png"
+    },
+    {
+      "name": "Discord",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Discord.png"
+    },
+    {
+      "name": "Emby",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png"
+    },
+    {
+      "name": "Facebook",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png"
+    },
+    {
+      "name": "Find_My",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Find_My.png"
+    },
+    {
+      "name": "GitHub_Letter",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub_Letter.png"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png"
+    },
+    {
+      "name": "Google_Drive",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Drive.png"
+    },
+    {
+      "name": "Google_Opinion_Rewards",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Opinion_Rewards.png"
+    },
+    {
+      "name": "Google_Search",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png"
+    },
+    {
+      "name": "Infuse_7",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Infuse_7.png"
+    },
+    {
+      "name": "Infuse",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Infuse.png"
+    },
+    {
+      "name": "Ingress",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Ingress.png"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Instagram.png"
+    },
+    {
+      "name": "League_of_Legends",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/League_of_Legends.png"
+    },
+    {
+      "name": "Line",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Line.png"
+    },
+    {
+      "name": "LOL",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/LOL.png"
+    },
+    {
+      "name": "NBA",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/NBA.png"
+    },
+    {
+      "name": "Notion",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Notion.png"
+    },
+    {
+      "name": "OneDrive",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/OneDrive.png"
+    },
+    {
+      "name": "PayPal",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png"
+    },
+    {
+      "name": "PostBox_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PostBox_1.png"
+    },
+    {
+      "name": "PostBox",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PostBox.png"
+    },
+    {
+      "name": "QQ",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/QQ.png"
+    },
+    {
+      "name": "Spark",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spark.png"
+    },
+    {
+      "name": "Speedtest",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Speedtest.png"
+    },
+    {
+      "name": "Steam",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png"
+    },
+    {
+      "name": "Taobao",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taobao.png"
+    },
+    {
+      "name": "Telegram_X",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram_X.png"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
+    },
+    {
+      "name": "TestFlight_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight_1.png"
+    },
+    {
+      "name": "TestFlight_2",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight_2.png"
+    },
+    {
+      "name": "TestFlight",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight.png"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png"
+    },
+    {
+      "name": "WeChat",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png"
+    }
+  ]
+}

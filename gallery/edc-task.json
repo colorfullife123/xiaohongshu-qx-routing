@@ -1,0 +1,182 @@
+{
+  "name": "EDC · 任务图标",
+  "description": "源自 erdongchanyo/icon 的 任务图标 图标。",
+  "icons": [
+    {
+      "name": "10000",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/10000.png"
+    },
+    {
+      "name": "10001",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/10001.png"
+    },
+    {
+      "name": "10086",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/10086.png"
+    },
+    {
+      "name": "Aiqiyi",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Aiqiyi.png"
+    },
+    {
+      "name": "Bilibili",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Bilibili.png"
+    },
+    {
+      "name": "Bububao",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Bububao.png"
+    },
+    {
+      "name": "Chunfengzhuan",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Chunfengzhuan.png"
+    },
+    {
+      "name": "Conghua",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Conghua.png"
+    },
+    {
+      "name": "Dianshijia",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Dianshijia.png"
+    },
+    {
+      "name": "Didi",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Didi.png"
+    },
+    {
+      "name": "Duokandian",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Duokandian.png"
+    },
+    {
+      "name": "Fanli",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Fanli.png"
+    },
+    {
+      "name": "Fanqiekankan",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Fanqiekankan.png"
+    },
+    {
+      "name": "JD01",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/JD01.png"
+    },
+    {
+      "name": "JD02",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/JD02.png"
+    },
+    {
+      "name": "JDBean",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/JDBean.png"
+    },
+    {
+      "name": "Kuaishou",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Kuaishou.png"
+    },
+    {
+      "name": "Langguoyy",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Langguoyy.png"
+    },
+    {
+      "name": "Luka",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Luka.png"
+    },
+    {
+      "name": "Mangotv",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Mangotv.png"
+    },
+    {
+      "name": "Netease",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Netease.png"
+    },
+    {
+      "name": "NeteaseNews",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/NeteaseNews.png"
+    },
+    {
+      "name": "OpenL",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/OpenL.png"
+    },
+    {
+      "name": "Qczj",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Qczj.png"
+    },
+    {
+      "name": "QQread",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/QQread.png"
+    },
+    {
+      "name": "QQreads",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/QQreads.png"
+    },
+    {
+      "name": "Quanminyuedong",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Quanminyuedong.png"
+    },
+    {
+      "name": "Shuimianzhuan",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Shuimianzhuan.png"
+    },
+    {
+      "name": "Shuqixiaoshuo",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Shuqixiaoshuo.png"
+    },
+    {
+      "name": "TTyuyin",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/TTyuyin.png"
+    },
+    {
+      "name": "VSH",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/VSH.png"
+    },
+    {
+      "name": "Weikezongzhi",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Weikezongzhi.png"
+    },
+    {
+      "name": "Wenlvkandian",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Wenlvkandian.png"
+    },
+    {
+      "name": "Wps",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Wps.png"
+    },
+    {
+      "name": "Xiaopu",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Xiaopu.png"
+    },
+    {
+      "name": "Ximalaya",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Ximalaya.png"
+    },
+    {
+      "name": "Ximei",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Ximei.png"
+    },
+    {
+      "name": "Xinyunzhuandian",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Xinyunzhuandian.png"
+    },
+    {
+      "name": "Xuanshangmiao",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Xuanshangmiao.png"
+    },
+    {
+      "name": "Yangguangguoyuan",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Yangguangguoyuan.png"
+    },
+    {
+      "name": "Youth",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Youth.png"
+    },
+    {
+      "name": "Yuedongzu",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Yuedongzu.png"
+    },
+    {
+      "name": "Yunsaoma",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Yunsaoma.png"
+    },
+    {
+      "name": "Zhimashipin",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Zhimashipin.png"
+    }
+  ]
+}

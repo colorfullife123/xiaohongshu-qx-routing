@@ -1,0 +1,338 @@
+{
+  "name": "QX · 基础策略与广告拦截",
+  "description": "DIRECT/PROXY/REJECT、延迟、智能切换、拦截、分流与网络策略。",
+  "icons": [
+    {
+      "name": "AdBlack",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AdBlack.png"
+    },
+    {
+      "name": "Advertising",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png"
+    },
+    {
+      "name": "AdWhite",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AdWhite.png"
+    },
+    {
+      "name": "Auto",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png"
+    },
+    {
+      "name": "Available_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available_1.png"
+    },
+    {
+      "name": "Available",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png"
+    },
+    {
+      "name": "Back",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Back.png"
+    },
+    {
+      "name": "Direct",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png"
+    },
+    {
+      "name": "Domestic",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Domestic.png"
+    },
+    {
+      "name": "DomesticMedia",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DomesticMedia.png"
+    },
+    {
+      "name": "Final_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final_1.png"
+    },
+    {
+      "name": "Final",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png"
+    },
+    {
+      "name": "ForeignMedia",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png"
+    },
+    {
+      "name": "Global",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png"
+    },
+    {
+      "name": "Hijacking",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hijacking.png"
+    },
+    {
+      "name": "HKMTMedia",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HKMTMedia.png"
+    },
+    {
+      "name": "Proxy",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png"
+    },
+    {
+      "name": "Quantumult_X",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Quantumult_X.png"
+    },
+    {
+      "name": "Qure",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Qure.png"
+    },
+    {
+      "name": "Reject",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Reject.png"
+    },
+    {
+      "name": "Round_Robin_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png"
+    },
+    {
+      "name": "Round_Robin",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png"
+    },
+    {
+      "name": "SSID_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SSID_1.png"
+    },
+    {
+      "name": "SSID",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SSID.png"
+    },
+    {
+      "name": "Static_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static_1.png"
+    },
+    {
+      "name": "Static",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png"
+    },
+    {
+      "name": "Streaming",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png"
+    },
+    {
+      "name": "StreamingCN",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/StreamingCN.png"
+    },
+    {
+      "name": "StreamingSE",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/StreamingSE.png"
+    },
+    {
+      "name": "ULB_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB_1.png"
+    },
+    {
+      "name": "ULB",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB.png"
+    },
+    {
+      "name": "EDC · AdBlock",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/AdBlock.png"
+    },
+    {
+      "name": "EDC · Aiqiyi",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Aiqiyi.png"
+    },
+    {
+      "name": "EDC · Amazon",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Amazon.png"
+    },
+    {
+      "name": "EDC · Apple",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png"
+    },
+    {
+      "name": "EDC · AppleNews",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/AppleNews.png"
+    },
+    {
+      "name": "EDC · Auto",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png"
+    },
+    {
+      "name": "EDC · BGP",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/BGP.png"
+    },
+    {
+      "name": "EDC · Bilibili",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png"
+    },
+    {
+      "name": "EDC · Clubhouse",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Clubhouse.png"
+    },
+    {
+      "name": "EDC · CMedia",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/CMedia.png"
+    },
+    {
+      "name": "EDC · DIA",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/DIA.png"
+    },
+    {
+      "name": "EDC · Direct",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Direct.png"
+    },
+    {
+      "name": "EDC · Disney+",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney%2B.png"
+    },
+    {
+      "name": "EDC · Emby",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Emby.png"
+    },
+    {
+      "name": "EDC · Final",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final.png"
+    },
+    {
+      "name": "EDC · Final01",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png"
+    },
+    {
+      "name": "EDC · Game",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Game.png"
+    },
+    {
+      "name": "EDC · GMedia",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png"
+    },
+    {
+      "name": "EDC · Google",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png"
+    },
+    {
+      "name": "EDC · HBO",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png"
+    },
+    {
+      "name": "EDC · Hulu",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Hulu.png"
+    },
+    {
+      "name": "EDC · IEPL",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/IEPL.png"
+    },
+    {
+      "name": "EDC · Instagram",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Instagram.png"
+    },
+    {
+      "name": "EDC · IPLC",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/IPLC.png"
+    },
+    {
+      "name": "EDC · Line",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Line.png"
+    },
+    {
+      "name": "EDC · LoL",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/LoL.png"
+    },
+    {
+      "name": "EDC · Mainland",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png"
+    },
+    {
+      "name": "EDC · Microsoft",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png"
+    },
+    {
+      "name": "EDC · Netease",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netease.png"
+    },
+    {
+      "name": "EDC · NeteaseUnblock",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/NeteaseUnblock.png"
+    },
+    {
+      "name": "EDC · Netflix",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png"
+    },
+    {
+      "name": "EDC · OpenAI",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/OpenAI.png"
+    },
+    {
+      "name": "EDC · Outside",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Outside.png"
+    },
+    {
+      "name": "EDC · Paypal",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png"
+    },
+    {
+      "name": "EDC · Pornhub",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Pornhub.png"
+    },
+    {
+      "name": "EDC · PrimeVideo",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/PrimeVideo.png"
+    },
+    {
+      "name": "EDC · Proxy",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png"
+    },
+    {
+      "name": "EDC · QQvideo",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/QQvideo.png"
+    },
+    {
+      "name": "EDC · Reject",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Reject.png"
+    },
+    {
+      "name": "EDC · Speedtest",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Speedtest.png"
+    },
+    {
+      "name": "EDC · Spotify",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png"
+    },
+    {
+      "name": "EDC · SSID",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/SSID.png"
+    },
+    {
+      "name": "EDC · SSport+",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/SSport%2B.png"
+    },
+    {
+      "name": "EDC · Star+",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Star%2B.png"
+    },
+    {
+      "name": "EDC · Telegram",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png"
+    },
+    {
+      "name": "EDC · TestFlight",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/TestFlight.png"
+    },
+    {
+      "name": "EDC · Tiktok",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png"
+    },
+    {
+      "name": "EDC · TVBAnywhere+",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/TVBAnywhere%2B.png"
+    },
+    {
+      "name": "EDC · Twitter",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png"
+    },
+    {
+      "name": "EDC · Weibo",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Weibo.png"
+    },
+    {
+      "name": "EDC · Whatsapp",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Whatsapp.png"
+    },
+    {
+      "name": "EDC · Youtube",
+      "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png"
+    }
+  ]
+}

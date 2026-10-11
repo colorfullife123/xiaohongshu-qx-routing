@@ -1,0 +1,10 @@
+{
+  "name": "QX · 自定义策略",
+  "description": "小红书发布/评论独立分流策略专用高清适配图标。",
+  "icons": [
+    {
+      "name": "小红书上传 · Xiaohongshu",
+      "url": "https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/assets/xiaohongshu-policy-108.png"
+    }
+  ]
+}

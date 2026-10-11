@@ -1,0 +1,230 @@
+{
+  "name": "QX · 其他与归档",
+  "description": "趣味、动物、抽象符号及归档资源。",
+  "icons": [
+    {
+      "name": "Airport",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png"
+    },
+    {
+      "name": "Area",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Area.png"
+    },
+    {
+      "name": "Bamboo",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bamboo.png"
+    },
+    {
+      "name": "Blackhole",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Blackhole.png"
+    },
+    {
+      "name": "Blinkload_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Blinkload_1.png"
+    },
+    {
+      "name": "Blinkload",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Blinkload.png"
+    },
+    {
+      "name": "Bookpedia",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bookpedia.png"
+    },
+    {
+      "name": "BosLife_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/BosLife_1.png"
+    },
+    {
+      "name": "BosLife",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/BosLife.png"
+    },
+    {
+      "name": "Bot",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bot.png"
+    },
+    {
+      "name": "Bypass",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bypass.png"
+    },
+    {
+      "name": "Cat",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cat.png"
+    },
+    {
+      "name": "Catnet",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Catnet.png"
+    },
+    {
+      "name": "Cellular",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cellular.png"
+    },
+    {
+      "name": "Cryptocurrency_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cryptocurrency_1.png"
+    },
+    {
+      "name": "Cryptocurrency_2",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cryptocurrency_2.png"
+    },
+    {
+      "name": "Cryptocurrency_3",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cryptocurrency_3.png"
+    },
+    {
+      "name": "Cryptocurrency",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cryptocurrency.png"
+    },
+    {
+      "name": "Daily",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Daily.png"
+    },
+    {
+      "name": "Dinosaur",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Dinosaur.png"
+    },
+    {
+      "name": "Download",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Download.png"
+    },
+    {
+      "name": "Drill",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Drill.png"
+    },
+    {
+      "name": "Filter",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Filter.png"
+    },
+    {
+      "name": "Flamingo",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Flamingo.png"
+    },
+    {
+      "name": "Frog",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Frog.png"
+    },
+    {
+      "name": "Game",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png"
+    },
+    {
+      "name": "Heart",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Heart.png"
+    },
+    {
+      "name": "Lab",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lab.png"
+    },
+    {
+      "name": "Lambda",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lambda.png"
+    },
+    {
+      "name": "Lock",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lock.png"
+    },
+    {
+      "name": "Loop",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Loop.png"
+    },
+    {
+      "name": "Luffy",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Luffy.png"
+    },
+    {
+      "name": "Magic",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Magic.png"
+    },
+    {
+      "name": "Mail",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Mail.png"
+    },
+    {
+      "name": "Media",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Media.png"
+    },
+    {
+      "name": "Mickey",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Mickey.png"
+    },
+    {
+      "name": "Mouse",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Mouse.png"
+    },
+    {
+      "name": "Music_Enhance",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Music_Enhance.png"
+    },
+    {
+      "name": "Nfcloud",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Nfcloud.png"
+    },
+    {
+      "name": "Ox",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Ox.png"
+    },
+    {
+      "name": "Panda",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Panda.png"
+    },
+    {
+      "name": "Pig",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Pig.png"
+    },
+    {
+      "name": "Puzzle",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Puzzle.png"
+    },
+    {
+      "name": "Rocket",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png"
+    },
+    {
+      "name": "Scholar",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Scholar.png"
+    },
+    {
+      "name": "Server",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png"
+    },
+    {
+      "name": "SSL",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SSL.png"
+    },
+    {
+      "name": "Stack",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Stack.png"
+    },
+    {
+      "name": "Star",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Star.png"
+    },
+    {
+      "name": "TAG",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TAG.png"
+    },
+    {
+      "name": "Taiwan",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png"
+    },
+    {
+      "name": "Unlock",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Unlock.png"
+    },
+    {
+      "name": "VIP",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/VIP.png"
+    },
+    {
+      "name": "Want_Want_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Want_Want_1.png"
+    },
+    {
+      "name": "Want_Want",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Want_Want.png"
+    },
+    {
+      "name": "WiFi",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WiFi.png"
+    }
+  ]
+}

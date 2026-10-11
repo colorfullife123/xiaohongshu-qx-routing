@@ -1,0 +1,134 @@
+{
+  "name": "QX · AI 与社交",
+  "description": "AI 助手、社交、聊天、开发工具及平台，并包含小红书策略。",
+  "icons": [
+    {
+      "name": "AI",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png"
+    },
+    {
+      "name": "Apple",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png"
+    },
+    {
+      "name": "bilibili",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png"
+    },
+    {
+      "name": "ChatGPT",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png"
+    },
+    {
+      "name": "Cloudflare",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cloudflare.png"
+    },
+    {
+      "name": "Copilot",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Copilot.png"
+    },
+    {
+      "name": "Discord",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Discord.png"
+    },
+    {
+      "name": "Facebook",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png"
+    },
+    {
+      "name": "GitHub_Letter",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub_Letter.png"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png"
+    },
+    {
+      "name": "Gmail",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Gmail.png"
+    },
+    {
+      "name": "Google",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google.png"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Instagram.png"
+    },
+    {
+      "name": "Kakao",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Kakao.png"
+    },
+    {
+      "name": "Line",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Line.png"
+    },
+    {
+      "name": "Linkedin",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Linkedin.png"
+    },
+    {
+      "name": "Microsoft",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png"
+    },
+    {
+      "name": "Netease_Music",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music.png"
+    },
+    {
+      "name": "Notion",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Notion.png"
+    },
+    {
+      "name": "PayPal",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png"
+    },
+    {
+      "name": "QQ",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/QQ.png"
+    },
+    {
+      "name": "Steam",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png"
+    },
+    {
+      "name": "Taobao",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taobao.png"
+    },
+    {
+      "name": "Telegram_X",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram_X.png"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
+    },
+    {
+      "name": "TikTok",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png"
+    },
+    {
+      "name": "WeChat",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png"
+    },
+    {
+      "name": "Weibo",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Weibo.png"
+    },
+    {
+      "name": "X",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"
+    },
+    {
+      "name": "小红书上传 · Xiaohongshu",
+      "url": "https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/assets/xiaohongshu-policy-108.png"
+    }
+  ]
+}

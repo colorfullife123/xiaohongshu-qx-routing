@@ -1,0 +1,25 @@
+name: Refresh Quantumult X Icon Gallery
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 4 * * 1'
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Regenerate and validate gallery manifests
+        run: python3 gallery/generate.py
+      - name: Publish if icon inventory changed
+        run: |
+          if ! git diff --quiet -- gallery/*.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add gallery/*.json
+            git commit -m "chore(gallery): sync upstream QX icons"
+            git push
+          fi
