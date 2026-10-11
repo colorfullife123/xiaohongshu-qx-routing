@@ -1,14 +1,15 @@
 /**
- * Xiaohongshu Quantumult X precise publish relay
- * v2.1.0 - 2026-10-11
+ * Xiaohongshu Quantumult X precise write-action relay
+ * v2.2.0 - 2026-10-11
  *
- * Intended for script-analyze-echo-response on:
- *   - https://edith.xiaohongshu.com/api/media/v1/upload/capa/permit
- *   - https://edith.xiaohongshu.com/api/sns/v2/note
+ * Intended for script-analyze-echo-response on Xiaohongshu write actions:
+ *   - upload permit
+ *   - final note publish
+ *   - comment post/reply/create
  *
  * The original request is replayed once with $task.fetch({opts:{policy}}),
- * so only the matched publish-chain request uses the selected policy.
- * Other edith.xiaohongshu.com traffic remains DIRECT.
+ * so only the matched write action uses the selected policy.
+ * Comment list/page/detail and other edith.xiaohongshu.com traffic remain DIRECT.
  */
 
 const DEFAULT_POLICY = "📤 小红书上传";
@@ -95,7 +96,7 @@ $task.fetch(req).then(response => {
 }, reason => {
   const message = String(reason && (reason.error || reason.message || reason) || "unknown error");
   console.log(`[XHS-QX] relay failed: ${message}`);
-  try { $notify("小红书精准发布失败", policy, message); } catch (_) {}
+  try { $notify("小红书精准分流失败", policy, message); } catch (_) {}
   $done({
     status: "HTTP/1.1 502 Bad Gateway",
     headers: { "Content-Type": "application/json; charset=utf-8" },
