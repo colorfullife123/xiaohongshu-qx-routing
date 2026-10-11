@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.2.0 - 2026-10-11
+
+- Route Xiaohongshu **comment POST/reply/create** write actions through `📤 小红书上传`.
+- Keep comment list/page/detail traffic DIRECT, so opening and scrolling comments does not consume the proxy.
+- Add confirmed Web endpoint `/api/sns/web/v1/comment/post`.
+- Add App-compatible write-only regexes for `vN/comment/(post|create|reply|send)` and `vN/note/comment/(post|create|reply|send)`.
+- Reuse the same precise relay and selected upload/publish policy for note publishing and comment publishing.
+
+
 ## v2.1.1 - 2026-10-11
 
 - Document the correct Quantumult X UI workflow for the visible upload policy.
