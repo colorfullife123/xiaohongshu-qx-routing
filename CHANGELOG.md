@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.1.1 - 2026-10-11
+
+- Document the correct Quantumult X UI workflow for the visible upload policy.
+- Clarify that `XHS-Upload.list` is a filter resource and must **not** be enabled as `as-policy`; doing so returns `No Data` because it contains no nodes.
+- Recommend duplicating the user's existing server subscription and enabling its Strategy/as-policy switch as `📤 小红书上传`.
+- Keep upload filters and precise publish rewrite bound to the same custom policy.
+
+
 ## v2.1.0 - 2026-10-11
 
 - Rename the dedicated QX policy to `📤 小红书上传` so it is obvious in the Custom Policies UI.
