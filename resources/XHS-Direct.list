@@ -1,8 +1,10 @@
-# Xiaohongshu Quantumult X precise routing - DIRECT side
-# Import as a FILTER resource. Do not enable policy override for this resource.
-host, edith.xiaohongshu.com, direct
+# Xiaohongshu Quantumult X Strict mode - media/CDN DIRECT only
+# v2.3.1
+#
+# IMPORTANT:
+# Do NOT add any *.xiaohongshu.com API hosts here.
+# Strict mode must route all xiaohongshu.com API traffic through 📤 小红书上传.
+#
+# This resource only keeps bandwidth-heavy Xiaohongshu media CDN on DIRECT.
+
 host-suffix, xhscdn.com, direct
-host, t2.xiaohongshu.com, direct
-host, apm-native.xiaohongshu.com, direct
-host, rec.xiaohongshu.com, direct
-host, www.xiaohongshu.com, direct
