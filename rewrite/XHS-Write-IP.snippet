@@ -1,14 +1,10 @@
 # Xiaohongshu Quantumult X smart publish/comment routing
-# v2.4.2 - 2026-10-11
+# v2.4.3 - 2026-10-11
 #
-# Broad hook on edith.xiaohongshu.com, but the script classifies requests:
-# - publish/comment write actions -> 📤 小红书上传
-# - comment page/list/query/detail and other read/browse requests -> DIRECT
-# - unknown body-bearing requests -> DIRECT
+# Confirmed iOS App comment publish endpoint:
+# POST /api/sns/vN/note/comment -> 📤 小红书上传
 #
-# v2.4.2: after known comment-read paths are excluded, every other
-# non-safe comment request is treated as a write. This fixes App versions
-# whose comment POST path/body did not match the v2.4.1 heuristics.
+# Read/browse requests remain DIRECT.
 
 hostname = edith.xiaohongshu.com
-^https:\/\/edith\.xiaohongshu\.com\/.* url script-analyze-echo-response https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/qx-precise-routing-v2/scripts/xhs-write-ip-v2.4.2.js#policy=%F0%9F%93%A4%20%E5%B0%8F%E7%BA%A2%E4%B9%A6%E4%B8%8A%E4%BC%A0
+^https:\/\/edith\.xiaohongshu\.com\/.* url script-analyze-echo-response https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/qx-precise-routing-v2/scripts/xhs-write-ip-v2.4.3.js#policy=%F0%9F%93%A4%20%E5%B0%8F%E7%BA%A2%E4%B9%A6%E4%B8%8A%E4%BC%A0
