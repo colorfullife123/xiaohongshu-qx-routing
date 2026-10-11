@@ -3,4 +3,4 @@
 # Candidate order:
 # 自动选择 -> 全球加速 -> direct -> 香港节点 -> 台湾节点 -> 日本节点 -> 狮城节点 -> 美国节点 -> proxy
 
-static = 📤 小红书上传, 自动选择, 全球加速, direct, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, proxy, img-url=https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/assets/xiaohongshu-policy-v2.png
+static = 📤 小红书上传, 自动选择, 全球加速, direct, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, proxy, img-url=https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/assets/xiaohongshu-policy-108.png
