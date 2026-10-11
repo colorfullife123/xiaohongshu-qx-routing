@@ -1,0 +1,4 @@
+# Quantumult X v2.4.3 custom policy
+# Appears under Custom Policies as: 📤 小红书上传
+
+static = 📤 小红书上传, direct, proxy, resource-tag-regex=.*, server-tag-regex=^(?!.*(?:流量|剩余|到期|套餐|官网|客服|订阅|重置)).+$, img-url=https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/assets/xiaohongshu-policy.png
