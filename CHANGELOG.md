@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.3.1 - 2026-10-11
+
+- Fix Strict mode being shadowed by old host-level DIRECT rules.
+- `resources/XHS-Direct.list` now contains only `host-suffix, xhscdn.com, direct`.
+- Remove `edith.xiaohongshu.com`, `t2.xiaohongshu.com`, `apm-native.xiaohongshu.com`, `rec.xiaohongshu.com`, and `www.xiaohongshu.com` from the DIRECT resource.
+- All `*.xiaohongshu.com` API traffic can now reliably match `XHS-Strict-IP.list` and use `📤 小红书上传`.
+
+
 ## v2.3.0 - 2026-10-11
 
 - Add `resources/XHS-Strict-IP.list` for reliable Xiaohongshu App IP consistency.
