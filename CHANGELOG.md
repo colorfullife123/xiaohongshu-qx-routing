@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.4.3 - 2026-10-11
+
+- Confirmed from iOS device logs that `POST /api/sns/v4/note/comment` is the actual comment publishing request.
+- Explicitly route `/api/sns/vN/note/comment` through `📤 小红书上传`.
+- Keep comment list/read paths DIRECT.
+- Add a new versioned rewrite resource filename to bypass Quantumult X remote-resource/script caching.
+- Point the default `XHS-Write-IP.snippet` to the v2.4.3 classifier.
+
+
 ## v2.4.2 - 2026-10-11
 
 - Fix comment posting falling back to DIRECT in v2.4.1.
