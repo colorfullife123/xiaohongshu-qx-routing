@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.3.0 - 2026-10-11
+
+- Add `resources/XHS-Strict-IP.list` for reliable Xiaohongshu App IP consistency.
+- Strict mode routes all `*.xiaohongshu.com` API traffic through `📤 小红书上传`.
+- Keep `*.xhscdn.com` media CDN on DIRECT.
+- Recommend disabling precise rewrite while Strict mode is enabled to avoid duplicate relay.
+- Keep the Path-based precise mode as an optional low-proxy-traffic mode.
+
+
 ## v2.2.0 - 2026-10-11
 
 - Route Xiaohongshu **comment POST/reply/create** write actions through `📤 小红书上传`.
