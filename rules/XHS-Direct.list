@@ -1,6 +1,7 @@
-# Xiaohongshu media/download traffic -> DIRECT
-# Keep bandwidth-heavy media on the local connection.
+# Xiaohongshu normal API/media traffic -> DIRECT
+# Precise publish endpoints on edith are intercepted first by the rewrite resource.
 
+host, edith.xiaohongshu.com, direct
 host-suffix, xhscdn.com, direct
 host, t2.xiaohongshu.com, direct
 host, apm-native.xiaohongshu.com, direct
