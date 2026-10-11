@@ -1,3 +1,3 @@
 # Xiaohongshu binary upload - import as FILTER resource
-# In Quantumult X resource UI, enable Policy Override and choose the desired publish node/policy.
+# Bind this filter resource to the visible custom policy: 📤 小红书上传
 host, ros-upload.xiaohongshu.com, proxy
