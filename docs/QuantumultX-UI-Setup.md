@@ -48,3 +48,14 @@ Requires trusted Quantumult X MitM for `edith.xiaohongshu.com`.
 ## Do NOT do this
 
 Do not turn on Strategy for `XHS-Upload.list`. It is a filter list, not a node list, so Quantumult X will show **No Data**.
+
+
+## v2.2.0 comment IP routing
+
+The same `📤 小红书上传` policy is now also used for **sending/replying to comments**.
+
+- Send/reply comment: proxy through `📤 小红书上传`
+- Load/scroll comment list: DIRECT
+- Note detail/normal API: DIRECT
+
+After updating the rewrite resource, fully terminate Xiaohongshu and reopen it before testing, so old TLS connections do not reuse the previous route.
