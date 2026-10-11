@@ -4,10 +4,11 @@ Quantumult X 小红书精准发布分流。目标：
 
 - 图片 / 视频素材上传走你选择的出口；
 - 最终发布请求走同一个出口；
-- 评论、详情、推荐流及媒体 CDN 保持 DIRECT；
+- 评论列表/详情/推荐流及媒体 CDN 保持 DIRECT；
+- **发送评论与回复评论**跟随 `📤 小红书上传`，避免评论显示本地 IP 属地；
 - 可在 Quantumult X 的 `📤 小红书上传` 中自由选择任意节点 / `proxy` / `direct`。
 
-## v2.1.1：Quantumult X UI 自定义策略模式
+## v2.2.0：发布 + 评论发送精准代理
 
 旧版把 `edith.xiaohongshu.com` 整个 Host 送进代理。由于评论、详情和发布 API 共用这个 Host，会导致评论区也误走代理。
 
@@ -15,11 +16,14 @@ v2.0.0 改成两层：
 
 1. Host 级规则只代理真正的二进制素材上传 Host：
    - `ros-upload.xiaohongshu.com` → `📤 小红书上传`
-2. URL Path 级规则只处理 edith 上的发布链：
+2. URL Path 级规则只处理 edith 上的**写操作**：
    - `/api/media/v1/upload/capa/permit`
    - `/api/sns/v2/note`
+   - `/api/sns/web/v1/comment/post`
+   - App 版本的 `vN/comment/post|create|reply|send`
+   - App 版本的 `vN/note/comment/post|create|reply|send`
 
-这两个 edith 请求通过 `script-analyze-echo-response` 捕获，再由 `$task.fetch(... opts.policy ...)` 仅对该请求指定 `📤 小红书上传`。其余 `edith.xiaohongshu.com` 请求继续命中 DIRECT。
+这些写操作通过 `script-analyze-echo-response` 捕获，再由 `$task.fetch(... opts.policy ...)` 仅对该次请求指定 `📤 小红书上传`。评论读取的 `list/page`、详情及其他 `edith.xiaohongshu.com` 请求继续命中 DIRECT。
 
 因此 QX 版不再需要 FlClash 那种“发布前切香港 → 30 秒后恢复”的计时器：**策略作用域本身就是单次发布请求。**
 
@@ -91,7 +95,7 @@ https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/re
 
 Quantumult X 策略页打开 `📤 小红书上传`，可直接选择某个具体节点、`proxy` 或 `direct`。
 
-该策略会直接显示在 Quantumult X 的“自定义策略”中。切换一次即可同时改变素材上传与最终发布请求的出口；评论、详情和普通 API 仍为 DIRECT。
+该策略会直接显示在 Quantumult X 的“自定义策略”中。切换一次即可同时改变素材上传、最终发布以及**发送/回复评论**的出口；评论列表加载、详情和其他普通 API 仍为 DIRECT。
 
 ## 流量行为
 
@@ -100,7 +104,9 @@ Quantumult X 策略页打开 `📤 小红书上传`，可直接选择某个具�
 | `ros-upload.xiaohongshu.com` | `📤 小红书上传` |
 | `edith.../api/media/v1/upload/capa/permit` | `📤 小红书上传`（精确 Path） |
 | `edith.../api/sns/v2/note` | `📤 小红书上传`（精确 Path） |
-| `edith` 评论 / 详情 / 普通 API | DIRECT |
+| `edith.../api/sns/web/v1/comment/post` | `📤 小红书上传`（发送/回复评论） |
+| App `.../comment/post|create|reply|send` | `📤 小红书上传`（发送/回复评论） |
+| `edith` 评论列表 `list/page` / 详情 / 普通 API | DIRECT |
 | `*.xhscdn.com` | DIRECT |
 | `t2.xiaohongshu.com` | DIRECT |
 | `apm-native.xiaohongshu.com` | DIRECT |
@@ -114,7 +120,8 @@ Quantumult X 策略页打开 `📤 小红书上传`，可直接选择某个具�
 - `ros-upload.xiaohongshu.com` → `📤 小红书上传`
 - 精准脚本日志出现：`[XHS-QX] precise relay ... via 📤 小红书上传`
 - 最终发布请求以 `$task.fetch` 指定策略的形式出现
-- 打开评论区时 `edith.xiaohongshu.com` 普通 API → DIRECT
+- 发送一条测试评论时，日志应出现 `[XHS-QX] precise relay POST ...comment... via 📤 小红书上传`
+- 打开/滚动评论区时 `...comment/list` 或 `...comment/page` → DIRECT
 - `sns-*.xhscdn.com` → DIRECT
 
 修改规则后建议彻底结束小红书后台并重新打开，避免已有连接复用旧路由。
