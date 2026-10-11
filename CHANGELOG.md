@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.4.1 - 2026-10-11
+
+- Fix opening the comment section also using the selected proxy.
+- Keep the broad edith Rewrite hook, but classify body-bearing requests inside the script.
+- Publish/comment write actions use `📤 小红书上传`.
+- Comment page/list/query/detail, IM reads and other browse/read POSTs use `direct`.
+- Unknown body-bearing requests default to DIRECT.
+- Add detailed `[XHS-QX v2.4.1]` classification logs.
+
+
 ## v2.4.0 - 2026-10-11
 
 - Switch the recommended Quantumult X design back to Rewrite.
