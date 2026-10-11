@@ -44,13 +44,13 @@ via direct
 在主配置 `[policy]` 中加入：
 
 ```ini
-static = 📤 小红书上传, 自动选择, 全球加速, direct, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, proxy, img-url=https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/assets/xiaohongshu-policy.png
+static = 📤 小红书上传, 自动选择, 全球加速, direct, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, proxy, img-url=https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/assets/xiaohongshu-policy-v2.png
 ```
 
 图标文件已内置到本仓库：
 
 ```text
-https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/assets/xiaohongshu-policy.png
+https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/assets/xiaohongshu-policy-v2.png
 ```
 
 策略模板：
