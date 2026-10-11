@@ -9,3 +9,5 @@ Use:
 - rewrite/XHS-Publish-Precise.snippet as a rewrite resource.
 
 The dedicated static policy line must be pasted once into the main profile [policy] section if you want an isolated user-selectable group.
+
+The visible custom policy name for v2.1.0 is `📤 小红书上传`. Bind XHS-Upload.list to this policy. The precise publish rewrite uses the same policy automatically.
