@@ -5,21 +5,21 @@ Quantumult X 小红书精准发布分流。目标：
 - 图片 / 视频素材上传走你选择的出口；
 - 最终发布请求走同一个出口；
 - 评论、详情、推荐流及媒体 CDN 保持 DIRECT；
-- 可在 Quantumult X 的 `🎯 小红书发布出口` 中自由选择任意节点 / `proxy` / `direct`。
+- 可在 Quantumult X 的 `📤 小红书上传` 中自由选择任意节点 / `proxy` / `direct`。
 
-## v2.0.0：精准发布模式
+## v2.1.0：自定义策略 + 精准发布模式
 
 旧版把 `edith.xiaohongshu.com` 整个 Host 送进代理。由于评论、详情和发布 API 共用这个 Host，会导致评论区也误走代理。
 
 v2.0.0 改成两层：
 
 1. Host 级规则只代理真正的二进制素材上传 Host：
-   - `ros-upload.xiaohongshu.com` → `🎯 小红书发布出口`
+   - `ros-upload.xiaohongshu.com` → `📤 小红书上传`
 2. URL Path 级规则只处理 edith 上的发布链：
    - `/api/media/v1/upload/capa/permit`
    - `/api/sns/v2/note`
 
-这两个 edith 请求通过 `script-analyze-echo-response` 捕获，再由 `$task.fetch(... opts.policy ...)` 仅对该请求指定 `🎯 小红书发布出口`。其余 `edith.xiaohongshu.com` 请求继续命中 DIRECT。
+这两个 edith 请求通过 `script-analyze-echo-response` 捕获，再由 `$task.fetch(... opts.policy ...)` 仅对该请求指定 `📤 小红书上传`。其余 `edith.xiaohongshu.com` 请求继续命中 DIRECT。
 
 因此 QX 版不再需要 FlClash 那种“发布前切香港 → 30 秒后恢复”的计时器：**策略作用域本身就是单次发布请求。**
 
@@ -34,12 +34,12 @@ v2.0.0 改成两层：
 
 ## 安装
 
-### 1. 新增自定义发布策略
+### 1. 新增可见的自定义上传策略
 
 在你现有 `[policy]` 中加入：
 
 ```ini
-static=🎯 小红书发布出口, direct, proxy, resource-tag-regex=.*, server-tag-regex=^(?!.*(?:流量|剩余|到期|套餐|官网|客服|订阅|重置)).+$, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Xiaohongshu.png
+static=📤 小红书上传, direct, proxy, resource-tag-regex=.*, server-tag-regex=^(?!.*(?:流量|剩余|到期|套餐|官网|客服|订阅|重置)).+$, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Xiaohongshu.png
 ```
 
 这会把常规机场节点加入该策略，并保留 `direct` / `proxy`。你也可以把 `resource-tag-regex=.*` 改成自己的机场订阅 Tag。
@@ -49,7 +49,7 @@ static=🎯 小红书发布出口, direct, proxy, resource-tag-regex=.*, server-
 在 `[filter_remote]` 中按顺序加入：
 
 ```ini
-https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/rules/XHS-Proxy.list, tag=小红书素材上传, force-policy=🎯 小红书发布出口, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/rules/XHS-Proxy.list, tag=小红书素材上传, force-policy=📤 小红书上传, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/rules/XHS-Direct.list, tag=小红书普通流量直连, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
 ```
 
@@ -65,19 +65,19 @@ https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/re
 
 该资源会声明 `hostname = edith.xiaohongshu.com`。你需要在 Quantumult X 中生成、安装并信任 MitM CA，并开启 Rewrite / MitM。
 
-### 4. 选择发布出口
+### 4. 在“自定义策略”里切换上传/发布出口
 
-Quantumult X 策略页打开 `🎯 小红书发布出口`，可直接选择某个具体节点、`proxy` 或 `direct`。
+Quantumult X 策略页打开 `📤 小红书上传`，可直接选择某个具体节点、`proxy` 或 `direct`。
 
-无需每次发布前再开启临时窗口：这个策略只会被素材上传和精准匹配到的发布链使用。
+该策略会直接显示在 Quantumult X 的“自定义策略”中。切换一次即可同时改变素材上传与最终发布请求的出口；评论、详情和普通 API 仍为 DIRECT。
 
 ## 流量行为
 
-| 请求 | v2.0.0 出口 |
+| 请求 | v2.1.0 出口 |
 | --- | --- |
-| `ros-upload.xiaohongshu.com` | `🎯 小红书发布出口` |
-| `edith.../api/media/v1/upload/capa/permit` | `🎯 小红书发布出口`（精确 Path） |
-| `edith.../api/sns/v2/note` | `🎯 小红书发布出口`（精确 Path） |
+| `ros-upload.xiaohongshu.com` | `📤 小红书上传` |
+| `edith.../api/media/v1/upload/capa/permit` | `📤 小红书上传`（精确 Path） |
+| `edith.../api/sns/v2/note` | `📤 小红书上传`（精确 Path） |
 | `edith` 评论 / 详情 / 普通 API | DIRECT |
 | `*.xhscdn.com` | DIRECT |
 | `t2.xiaohongshu.com` | DIRECT |
@@ -89,8 +89,8 @@ Quantumult X 策略页打开 `🎯 小红书发布出口`，可直接选择某�
 
 发布一张测试图片后，在 Quantumult X 网络活动中检查：
 
-- `ros-upload.xiaohongshu.com` → `🎯 小红书发布出口`
-- 精准脚本日志出现：`[XHS-QX] precise relay ... via 🎯 小红书发布出口`
+- `ros-upload.xiaohongshu.com` → `📤 小红书上传`
+- 精准脚本日志出现：`[XHS-QX] precise relay ... via 📤 小红书上传`
 - 最终发布请求以 `$task.fetch` 指定策略的形式出现
 - 打开评论区时 `edith.xiaohongshu.com` 普通 API → DIRECT
 - `sns-*.xhscdn.com` → DIRECT
@@ -102,7 +102,7 @@ Quantumult X 策略页打开 `🎯 小红书发布出口`，可直接选择某�
 如果当前小红书版本对 `edith.xiaohongshu.com` 启用了无法被 QX MitM 的证书校验，精准 Rewrite 可能无法工作。此时关闭 `小红书精准发布` rewrite，并改挂：
 
 ```ini
-https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/rules/XHS-Proxy-Legacy.list, tag=小红书Legacy发布, force-policy=🎯 小红书发布出口, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/rules/XHS-Proxy-Legacy.list, tag=小红书Legacy发布, force-policy=📤 小红书上传, update-interval=86400, opt-parser=false, enabled=true
 ```
 
 Legacy 模式不需要 MitM，但会让 `edith` 上的评论 / 详情 API 一起走所选发布出口，这就是旧版行为。
