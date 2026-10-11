@@ -1,5 +1,5 @@
-# Xiaohongshu publish/upload traffic -> proxy
-# Recommended to mount with force-policy=<your proxy policy>.
+# Xiaohongshu binary media upload -> selected publish policy
+# v2.0.0: edith.xiaohongshu.com removed from host-level proxying.
+# Precise edith publish-chain requests are handled by rewrite/XHS-Publish-Precise.snippet.
 
 host, ros-upload.xiaohongshu.com, proxy
-host, edith.xiaohongshu.com, proxy
