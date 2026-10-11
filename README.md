@@ -8,7 +8,9 @@ Quantumult X 小红书精准发布分流。目标：
 - **发送评论与回复评论**跟随 `📤 小红书上传`，避免评论显示本地 IP 属地；
 - 可在 Quantumult X 的 `📤 小红书上传` 中自由选择任意节点 / `proxy` / `direct`。
 
-## v2.2.0：发布 + 评论发送精准代理
+## v2.3.0：Strict IP 一致性模式
+
+**推荐 iOS App 使用 Strict 模式；精准 Path 模式保留为实验/低代理流量模式。**
 
 旧版把 `edith.xiaohongshu.com` 整个 Host 送进代理。由于评论、详情和发布 API 共用这个 Host，会导致评论区也误走代理。
 
@@ -48,6 +50,31 @@ https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/614a318
 完成后，Quantumult X 的“自定义策略”中会出现 `📤 小红书上传`，里面就是该机场订阅的节点，可以直接点选香港或其他节点。
 
 随后再添加 `resources/XHS-Upload.list` 时，**不要开启它自己的“策略”开关**，只把“策略覆盖 / force-policy”指向 `📤 小红书上传`。
+
+
+### 推荐给 App 的 Strict 模式
+
+如果“发送评论”仍显示本地 IP 属地，说明当前 App 的实际写入链路没有被 Path Rewrite 稳定捕获，或者平台的属地判断不仅参考单个评论 POST。
+
+此时不要继续使用精准 Rewrite，改用 **Strict IP 一致性模式**：
+
+```text
+https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/qx-precise-routing-v2/resources/XHS-Strict-IP.list
+```
+
+Quantumult X 设置：
+
+- 类型：过滤资源
+- “策略”开关：关闭
+- 策略覆盖：`📤 小红书上传`
+- 资源解析器：关闭
+- **把它排在 XHS-Direct.list 前面**
+- **关闭 `小红书精准发布` Rewrite，避免同一请求被脚本再次 relay**
+
+Strict 模式会把所有 `*.xiaohongshu.com` API 连接送到 `📤 小红书上传`。这包括发布、评论发送、评论读取、推荐和普通 API，因此不会再依赖 App 内部 Path。大流量媒体仍由 `*.xhscdn.com` 的 DIRECT 规则直连。
+
+> 如果平台的 IP 属地来自近期会话/账号活动而不只是单个评论 POST，Strict 模式也比“只代理评论 POST”更可靠，因为相关 API 会话都保持同一出口。
+
 
 ## 已确认的发布链
 
