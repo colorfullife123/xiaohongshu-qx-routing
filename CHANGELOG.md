@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.4.2 - 2026-10-11
+
+- Fix comment posting falling back to DIRECT in v2.4.1.
+- Evaluate known comment read endpoints first: page/list/query/detail/sub-comments/etc. stay DIRECT.
+- After those read endpoints are excluded, any remaining non-safe request whose path contains `comment` is treated as a write and uses `📤 小红书上传`.
+- Add a broader request-body fallback for App-private comment endpoints whose path name changes.
+- Keep unknown non-comment body-bearing requests DIRECT.
+
+
 ## v2.4.1 - 2026-10-11
 
 - Fix opening the comment section also using the selected proxy.
