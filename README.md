@@ -2,7 +2,7 @@
 
 Quantumult X 小红书发布/评论 IP 分流。
 
-## 正式版 v2.4.3
+## 正式版 v2.4.4
 
 推荐结构：
 
@@ -44,7 +44,7 @@ via direct
 在主配置 `[policy]` 中加入：
 
 ```ini
-static = 📤 小红书上传, direct, proxy, resource-tag-regex=.*, server-tag-regex=^(?!.*(?:流量|剩余|到期|套餐|官网|客服|订阅|重置)).+$, img-url=https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/assets/xiaohongshu-policy.png
+static = 📤 小红书上传, 自动选择, 全球加速, direct, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, proxy, img-url=https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/assets/xiaohongshu-policy.png
 ```
 
 图标文件已内置到本仓库：
@@ -59,7 +59,21 @@ https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/as
 https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/policy/XHS-Upload-Custom-Policy.txt
 ```
 
-然后在 Quantumult X 的“自定义策略”中选择需要的香港或其他节点。
+然后在 Quantumult X 的“自定义策略”中，`📤 小红书上传` 会按以下顺序显示候选项：
+
+```text
+自动选择
+全球加速
+direct
+香港节点
+台湾节点
+日本节点
+狮城节点
+美国节点
+proxy
+```
+
+这些名称必须与你当前 Quantumult X 主配置中的策略名称完全一致。
 
 ## 2. Rewrite 正式订阅
 
