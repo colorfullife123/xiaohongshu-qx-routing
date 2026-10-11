@@ -39,10 +39,10 @@ v2.0.0 改成两层：
 在你现有 `[policy]` 中加入：
 
 ```ini
-static=📤 小红书上传, direct, proxy, resource-tag-regex=.*, server-tag-regex=^(?!.*(?:流量|剩余|到期|套餐|官网|客服|订阅|重置)).+$, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Xiaohongshu.png
+static=📤 小红书上传, direct, proxy, resource-tag-regex=.*, server-tag-regex=^(?!.*(?:流量|剩余|到期|套餐|官网|客服|订阅|重置)).+$, img-url=https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/614a3182d41ffe15eb8b9d7485855e99cf1dca31/assets/xiaohongshu-policy.png
 ```
 
-这会把常规机场节点加入该策略，并保留 `direct` / `proxy`。你也可以把 `resource-tag-regex=.*` 改成自己的机场订阅 Tag。
+策略图标已改为仓库内置的小红书红底图标；同时会把常规机场节点加入该策略，并保留 `direct` / `proxy`。你也可以把 `resource-tag-regex=.*` 改成自己的机场订阅 Tag。
 
 ### 2. 添加分流规则
 
