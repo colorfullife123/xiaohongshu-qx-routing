@@ -1,6 +1,6 @@
 /**
  * Xiaohongshu Quantumult X precise publish relay
- * v2.0.0 - 2026-10-11
+ * v2.1.0 - 2026-10-11
  *
  * Intended for script-analyze-echo-response on:
  *   - https://edith.xiaohongshu.com/api/media/v1/upload/capa/permit
@@ -11,7 +11,7 @@
  * Other edith.xiaohongshu.com traffic remains DIRECT.
  */
 
-const DEFAULT_POLICY = "🎯 小红书发布出口";
+const DEFAULT_POLICY = "📤 小红书上传";
 
 function readVariables() {
   try {
