@@ -8,73 +8,69 @@ Quantumult X 小红书精准发布分流。目标：
 - **发送评论与回复评论**跟随 `📤 小红书上传`，避免评论显示本地 IP 属地；
 - 可在 Quantumult X 的 `📤 小红书上传` 中自由选择任意节点 / `proxy` / `direct`。
 
-## v2.3.1：Strict IP 冲突修复
+## v2.4.0：Rewrite 发布 IP 模式
 
-**推荐 iOS App 使用 Strict 模式；精准 Path 模式保留为实验/低代理流量模式。**
+**当前推荐方案：1 个自定义策略 + 1 个 Rewrite。**
 
-旧版把 `edith.xiaohongshu.com` 整个 Host 送进代理。由于评论、详情和发布 API 共用这个 Host，会导致评论区也误走代理。
+不再使用 Strict Host 分流作为主方案，也不再猜测具体的评论/发布 Path。v2.4.0 直接对：
 
-v2.0.0 改成两层：
+`edith.xiaohongshu.com`
 
-1. Host 级规则只代理真正的二进制素材上传 Host：
-   - `ros-upload.xiaohongshu.com` → `📤 小红书上传`
-2. URL Path 级规则只处理 edith 上的**写操作**：
-   - `/api/media/v1/upload/capa/permit`
-   - `/api/sns/v2/note`
-   - `/api/sns/web/v1/comment/post`
-   - App 版本的 `vN/comment/post|create|reply|send`
-   - App 版本的 `vN/note/comment/post|create|reply|send`
+上的所有 URL 挂载 `script-analyze-echo-response`。
 
-这些写操作通过 `script-analyze-echo-response` 捕获，再由 `$task.fetch(... opts.policy ...)` 仅对该次请求指定 `📤 小红书上传`。评论读取的 `list/page`、详情及其他 `edith.xiaohongshu.com` 请求继续命中 DIRECT。
+Quantumult X 官方说明 body 相关 Rewrite 在请求 Body 为空时不会执行。因此普通无 Body 请求不会被脚本 relay；带 Body 的 API 请求会由脚本使用：
 
-因此 QX 版不再需要 FlClash 那种“发布前切香港 → 30 秒后恢复”的计时器：**策略作用域本身就是单次发布请求。**
+`$task.fetch(..., opts: { policy: "📤 小红书上传" })`
 
+重新发出。
 
-> **重要：不要把 `XHS-Upload.list` 打开“策略”开关。** 该文件是过滤规则，不包含节点；Quantumult X 会显示“无数据”。“策略 / as-policy”只应该用于节点/服务器订阅资源。
+这覆盖当前 App 中最关键的写入行为：
 
-### 推荐：完全通过 Quantumult X UI 创建 `📤 小红书上传`
+- 发布作品最终提交
+- 发布评论
+- 回复评论
+- 其他 edith 上带 Body 的写操作
 
-如果你不想编辑主配置的 `[policy]`，请在 Quantumult X 的**节点资源 / 服务器订阅**中：
+因此不再依赖 `/api/sns/v2/note`、`/comment/post` 等可能变化的私有 Path。
 
-1. 找到你当前正在使用的机场节点订阅。
-2. **复制一份该订阅资源**（不要改原来的那份）。
-3. 把复制后的资源名称/Tag 改为 `📤 小红书上传`。
-4. 打开该资源的 **“策略”** 开关，使其作为一个 `static` 自定义策略出现。
-5. 资源解析器保持与你原机场订阅相同；如果原订阅需要解析器，这份复制资源也要开启同一个解析器。
-6. 策略图标使用：
+### 安装
+
+保留你的自定义策略：
+
+`📤 小红书上传`
+
+然后只添加这个 Rewrite 资源：
 
 ```text
-https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/614a3182d41ffe15eb8b9d7485855e99cf1dca31/assets/xiaohongshu-policy.png
+https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/qx-precise-routing-v2/rewrite/XHS-Write-IP.snippet
 ```
 
-完成后，Quantumult X 的“自定义策略”中会出现 `📤 小红书上传`，里面就是该机场订阅的节点，可以直接点选香港或其他节点。
+Quantumult X 中：
 
-随后再添加 `resources/XHS-Upload.list` 时，**不要开启它自己的“策略”开关**，只把“策略覆盖 / force-policy”指向 `📤 小红书上传`。
+- 类型：Rewrite 资源
+- 启用：是
+- MitM CA：必须已安装并信任
+- `hostname` 已由资源声明为 `edith.xiaohongshu.com`
 
+### v2.4.0 下应关闭
 
-### 推荐给 App 的 Strict 模式
+- `XHS-Strict-IP.list`
+- 旧 `XHS-Publish-Precise.snippet`
+- `XHS-Upload.list`（为了“显示的发布/评论 IP”不再需要）
 
-如果“发送评论”仍显示本地 IP 属地，说明当前 App 的实际写入链路没有被 Path Rewrite 稳定捕获，或者平台的属地判断不仅参考单个评论 POST。
+`XHS-Direct.list` 仅在你明确希望 `*.xhscdn.com` 强制 DIRECT 时可保留，它不会影响发布 IP。
 
-此时不要继续使用精准 Rewrite，改用 **Strict IP 一致性模式**：
+### 验证
+
+完全结束小红书后台并重连 Quantumult X 后，发布一条新评论或新作品。
+
+Quantumult X 日志应出现：
 
 ```text
-https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/qx-precise-routing-v2/resources/XHS-Strict-IP.list
+[XHS-QX v2.4] relay POST https://edith.xiaohongshu.com/... via 📤 小红书上传
 ```
 
-Quantumult X 设置：
-
-- 类型：过滤资源
-- “策略”开关：关闭
-- 策略覆盖：`📤 小红书上传`
-- 资源解析器：关闭
-- **把它排在 XHS-Direct.list 前面**
-- **关闭 `小红书精准发布` Rewrite，避免同一请求被脚本再次 relay**
-
-Strict 模式会把所有 `*.xiaohongshu.com` API 连接送到 `📤 小红书上传`。这包括发布、评论发送、评论读取、推荐和普通 API，因此不会再依赖 App 内部 Path。大流量媒体仍由 `*.xhscdn.com` 的 DIRECT 规则直连。**v2.3.1 起，`XHS-Direct.list` 只保留 `*.xhscdn.com`，不再包含 `edith/t2/rec/www/apm-native`，因此不会再与 Strict 规则冲突。**
-
-> 如果平台的 IP 属地来自近期会话/账号活动而不只是单个评论 POST，Strict 模式也比“只代理评论 POST”更可靠，因为相关 API 会话都保持同一出口。
-
+只要该日志出现，真正提交请求就是由你选中的策略节点发出的。
 
 ## 已确认的发布链
 
@@ -192,7 +188,7 @@ flclash/
 MIT
 
 
-## v2.3.1 实机判定
+## 历史 Strict 模式判定（v2.3.x，仅回退参考）
 
 如果 Quantumult X 网络活动里仍出现：
 
