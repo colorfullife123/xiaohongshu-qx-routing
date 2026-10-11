@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.4.0 - 2026-10-11
+
+- Switch the recommended Quantumult X design back to Rewrite.
+- Add `rewrite/XHS-Write-IP.snippet` matching all `edith.xiaohongshu.com` URLs.
+- Use `script-analyze-echo-response`; body-bearing API requests are replayed through `📤 小红书上传`.
+- Stop depending on private App paths for note publishing and comment publishing.
+- Add `scripts/xhs-write-ip.js` as a generic policy relay.
+- Strict Host routing remains available only as a fallback/diagnostic mode.
+
+
 ## v2.3.1 - 2026-10-11
 
 - Fix Strict mode being shadowed by old host-level DIRECT rules.
