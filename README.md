@@ -44,13 +44,13 @@ via direct
 在主配置 `[policy]` 中加入：
 
 ```ini
-static = 📤 小红书上传, 自动选择, 全球加速, direct, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, proxy, img-url=https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/assets/xiaohongshu-policy-v2.png
+static = 📤 小红书上传, 自动选择, 全球加速, direct, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, proxy, img-url=https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/assets/xiaohongshu-policy-108.png
 ```
 
-图标文件已内置到本仓库：
+图标文件已内置到本仓库（108×108 适配 Quantumult X；原始 512×512 图另行保留）：
 
 ```text
-https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/assets/xiaohongshu-policy-v2.png
+https://raw.githubusercontent.com/colorfullife123/xiaohongshu-qx-routing/main/assets/xiaohongshu-policy-108.png
 ```
 
 策略模板：
