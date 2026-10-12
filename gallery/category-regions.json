@@ -39,12 +39,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Canada.png"
     },
     {
-      "name": "China_Map",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png"
-    },
-    {
       "name": "China",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png"
+    },
+    {
+      "name": "China_Map",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png"
     },
     {
       "name": "CN",
@@ -211,12 +211,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Nations.png"
     },
     {
-      "name": "United_States_Map",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States_Map.png"
-    },
-    {
       "name": "United_States",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png"
+    },
+    {
+      "name": "United_States_Map",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States_Map.png"
     },
     {
       "name": "US",

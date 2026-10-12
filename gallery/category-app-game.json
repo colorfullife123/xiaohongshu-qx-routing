@@ -15,16 +15,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_News.png"
     },
     {
+      "name": "Clubhouse",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse.png"
+    },
+    {
       "name": "Clubhouse_1",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse_1.png"
     },
     {
       "name": "Clubhouse_2",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse_2.png"
-    },
-    {
-      "name": "Clubhouse",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse.png"
     },
     {
       "name": "Cydia",
@@ -47,12 +47,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Find_My.png"
     },
     {
-      "name": "GitHub_Letter",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub_Letter.png"
-    },
-    {
       "name": "GitHub",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png"
+    },
+    {
+      "name": "GitHub_Letter",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub_Letter.png"
     },
     {
       "name": "Google_Drive",
@@ -67,12 +67,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png"
     },
     {
-      "name": "Infuse_7",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Infuse_7.png"
-    },
-    {
       "name": "Infuse",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Infuse.png"
+    },
+    {
+      "name": "Infuse_7",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Infuse_7.png"
     },
     {
       "name": "Ingress",
@@ -111,12 +111,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png"
     },
     {
-      "name": "PostBox_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PostBox_1.png"
-    },
-    {
       "name": "PostBox",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PostBox.png"
+    },
+    {
+      "name": "PostBox_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PostBox_1.png"
     },
     {
       "name": "QQ",
@@ -139,12 +139,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taobao.png"
     },
     {
+      "name": "Telegram",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
+    },
+    {
       "name": "Telegram_X",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram_X.png"
     },
     {
-      "name": "Telegram",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
+      "name": "TestFlight",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight.png"
     },
     {
       "name": "TestFlight_1",
@@ -153,10 +157,6 @@
     {
       "name": "TestFlight_2",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight_2.png"
-    },
-    {
-      "name": "TestFlight",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight.png"
     },
     {
       "name": "Twitter",

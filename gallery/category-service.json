@@ -15,12 +15,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Alibaba.png"
     },
     {
+      "name": "Amazon",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Amazon.png"
+    },
+    {
       "name": "Amazon_1",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Amazon_1.png"
     },
     {
-      "name": "Amazon",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Amazon.png"
+      "name": "Apple",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png"
     },
     {
       "name": "Apple_1",
@@ -33,10 +37,6 @@
     {
       "name": "Apple_Update",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Update.png"
-    },
-    {
-      "name": "Apple",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png"
     },
     {
       "name": "Azure",
@@ -87,20 +87,20 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Siri.png"
     },
     {
-      "name": "Windows_11",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Windows_11.png"
-    },
-    {
       "name": "Windows",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Windows.png"
     },
     {
-      "name": "Yahoo_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Yahoo_1.png"
+      "name": "Windows_11",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Windows_11.png"
     },
     {
       "name": "Yahoo",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Yahoo.png"
+    },
+    {
+      "name": "Yahoo_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Yahoo_1.png"
     }
   ]
 }

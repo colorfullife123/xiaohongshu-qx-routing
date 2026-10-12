@@ -19,12 +19,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png"
     },
     {
-      "name": "Available_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available_1.png"
-    },
-    {
       "name": "Available",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png"
+    },
+    {
+      "name": "Available_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available_1.png"
     },
     {
       "name": "Back",
@@ -43,12 +43,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DomesticMedia.png"
     },
     {
-      "name": "Final_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final_1.png"
-    },
-    {
       "name": "Final",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png"
+    },
+    {
+      "name": "Final_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final_1.png"
     },
     {
       "name": "ForeignMedia",
@@ -83,28 +83,28 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Reject.png"
     },
     {
-      "name": "Round_Robin_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png"
-    },
-    {
       "name": "Round_Robin",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png"
     },
     {
-      "name": "SSID_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SSID_1.png"
+      "name": "Round_Robin_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png"
     },
     {
       "name": "SSID",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SSID.png"
     },
     {
-      "name": "Static_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static_1.png"
+      "name": "SSID_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SSID_1.png"
     },
     {
       "name": "Static",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png"
+    },
+    {
+      "name": "Static_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static_1.png"
     },
     {
       "name": "Streaming",
@@ -119,12 +119,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/StreamingSE.png"
     },
     {
-      "name": "ULB_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB_1.png"
-    },
-    {
       "name": "ULB",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB.png"
+    },
+    {
+      "name": "ULB_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB_1.png"
     },
     {
       "name": "EDC · AdBlock",

@@ -55,24 +55,24 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/All4.png"
     },
     {
-      "name": "Amazon_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Amazon_1.png"
-    },
-    {
       "name": "Amazon",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Amazon.png"
+    },
+    {
+      "name": "Amazon_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Amazon_1.png"
     },
     {
       "name": "America_Map",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/America_Map.png"
     },
     {
-      "name": "AmyTelecom_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AmyTelecom_1.png"
-    },
-    {
       "name": "AmyTelecom",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AmyTelecom.png"
+    },
+    {
+      "name": "AmyTelecom_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AmyTelecom_1.png"
     },
     {
       "name": "Apeach",
@@ -83,6 +83,10 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/App_Store.png"
     },
     {
+      "name": "Apple",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png"
+    },
+    {
       "name": "Apple_1",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png"
     },
@@ -91,16 +95,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png"
     },
     {
-      "name": "Apple_Fitness",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness.png"
+      "name": "Apple_Fitness+",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness%2B.png"
     },
     {
       "name": "Apple_Fitness+_Letter",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness%2B_Letter.png"
     },
     {
-      "name": "Apple_Fitness+",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness%2B.png"
+      "name": "Apple_Fitness",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness.png"
     },
     {
       "name": "Apple_Music",
@@ -111,20 +115,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_News.png"
     },
     {
-      "name": "Apple_TV_Plus",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_TV_Plus.png"
-    },
-    {
       "name": "Apple_TV",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_TV.png"
     },
     {
-      "name": "Apple_Update",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Update.png"
+      "name": "Apple_TV_Plus",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_TV_Plus.png"
     },
     {
-      "name": "Apple",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png"
+      "name": "Apple_Update",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Update.png"
     },
     {
       "name": "AR",
@@ -155,12 +155,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png"
     },
     {
-      "name": "Available_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available_1.png"
-    },
-    {
       "name": "Available",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png"
+    },
+    {
+      "name": "Available_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available_1.png"
     },
     {
       "name": "Azure",
@@ -179,6 +179,10 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bamboo.png"
     },
     {
+      "name": "BBC_iPlayer",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/BBC_iPlayer.png"
+    },
+    {
       "name": "BBC_iPlayer_1",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/BBC_iPlayer_1.png"
     },
@@ -187,12 +191,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/BBC_iPlayer_2.png"
     },
     {
-      "name": "BBC_iPlayer",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/BBC_iPlayer.png"
-    },
-    {
       "name": "BGP",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/BGP.png"
+    },
+    {
+      "name": "bilibili",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png"
     },
     {
       "name": "bilibili_1",
@@ -211,32 +215,28 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_4.png"
     },
     {
-      "name": "bilibili",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png"
-    },
-    {
       "name": "Blackhole",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Blackhole.png"
-    },
-    {
-      "name": "Blinkload_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Blinkload_1.png"
     },
     {
       "name": "Blinkload",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Blinkload.png"
     },
     {
+      "name": "Blinkload_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Blinkload_1.png"
+    },
+    {
       "name": "Bookpedia",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bookpedia.png"
     },
     {
-      "name": "BosLife_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/BosLife_1.png"
-    },
-    {
       "name": "BosLife",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/BosLife.png"
+    },
+    {
+      "name": "BosLife_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/BosLife_1.png"
     },
     {
       "name": "Bot",
@@ -287,16 +287,20 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png"
     },
     {
-      "name": "China_Map",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png"
-    },
-    {
       "name": "China",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png"
     },
     {
+      "name": "China_Map",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png"
+    },
+    {
       "name": "Cloudflare",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cloudflare.png"
+    },
+    {
+      "name": "Clubhouse",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse.png"
     },
     {
       "name": "Clubhouse_1",
@@ -305,10 +309,6 @@
     {
       "name": "Clubhouse_2",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse_2.png"
-    },
-    {
-      "name": "Clubhouse",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse.png"
     },
     {
       "name": "CN",
@@ -323,6 +323,10 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CreamData.png"
     },
     {
+      "name": "Cryptocurrency",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cryptocurrency.png"
+    },
+    {
       "name": "Cryptocurrency_1",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cryptocurrency_1.png"
     },
@@ -335,16 +339,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cryptocurrency_3.png"
     },
     {
-      "name": "Cryptocurrency",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cryptocurrency.png"
-    },
-    {
       "name": "Cydia",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cydia.png"
     },
     {
       "name": "Daily",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Daily.png"
+    },
+    {
+      "name": "DAZN",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DAZN.png"
     },
     {
       "name": "DAZN_1",
@@ -355,12 +359,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DAZN_2.png"
     },
     {
-      "name": "DAZN",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DAZN.png"
-    },
-    {
       "name": "DE",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DE.png"
+    },
+    {
+      "name": "deezer",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/deezer.png"
     },
     {
       "name": "deezer_1",
@@ -369,10 +373,6 @@
     {
       "name": "deezer_2",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/deezer_2.png"
-    },
-    {
-      "name": "deezer",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/deezer.png"
     },
     {
       "name": "Dinosaur",
@@ -391,8 +391,8 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/discovery%2B.png"
     },
     {
-      "name": "Disney",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png"
+      "name": "Disney+",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney%2B.png"
     },
     {
       "name": "Disney+_1",
@@ -403,8 +403,8 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney%2B_2.png"
     },
     {
-      "name": "Disney+",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney%2B.png"
+      "name": "Disney",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png"
     },
     {
       "name": "Domestic",
@@ -443,16 +443,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Epic_Games.png"
     },
     {
+      "name": "ESPN+",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ESPN%2B.png"
+    },
+    {
       "name": "ESPN+_1",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ESPN%2B_1.png"
     },
     {
       "name": "ESPN+_2",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ESPN%2B_2.png"
-    },
-    {
-      "name": "ESPN+",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ESPN%2B.png"
     },
     {
       "name": "EU",
@@ -479,12 +479,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Filter.png"
     },
     {
-      "name": "Final_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final_1.png"
-    },
-    {
       "name": "Final",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png"
+    },
+    {
+      "name": "Final_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final_1.png"
     },
     {
       "name": "Find_My",
@@ -543,12 +543,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GIA.png"
     },
     {
-      "name": "GitHub_Letter",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub_Letter.png"
-    },
-    {
       "name": "GitHub",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png"
+    },
+    {
+      "name": "GitHub_Letter",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub_Letter.png"
     },
     {
       "name": "Global",
@@ -557,6 +557,10 @@
     {
       "name": "Gmail",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Gmail.png"
+    },
+    {
+      "name": "Google",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google.png"
     },
     {
       "name": "Google_Drive",
@@ -571,8 +575,8 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png"
     },
     {
-      "name": "Google",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google.png"
+      "name": "HBO",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HBO.png"
     },
     {
       "name": "HBO_1",
@@ -583,6 +587,10 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HBO_2.png"
     },
     {
+      "name": "HBO_GO",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HBO_GO.png"
+    },
+    {
       "name": "HBO_GO_1",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HBO_GO_1.png"
     },
@@ -591,16 +599,8 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HBO_GO_2.png"
     },
     {
-      "name": "HBO_GO",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HBO_GO.png"
-    },
-    {
       "name": "HBO_Max",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HBO_Max.png"
-    },
-    {
-      "name": "HBO",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HBO.png"
     },
     {
       "name": "HC",
@@ -627,12 +627,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png"
     },
     {
-      "name": "Hulu_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hulu_1.png"
-    },
-    {
       "name": "Hulu",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hulu.png"
+    },
+    {
+      "name": "Hulu_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hulu_1.png"
     },
     {
       "name": "iCloud",
@@ -651,12 +651,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/India.png"
     },
     {
-      "name": "Infuse_7",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Infuse_7.png"
-    },
-    {
       "name": "Infuse",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Infuse.png"
+    },
+    {
+      "name": "Infuse_7",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Infuse_7.png"
     },
     {
       "name": "Ingress",
@@ -671,16 +671,20 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IPLC.png"
     },
     {
-      "name": "iQIYI_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iQIYI_1.png"
+      "name": "iQIYI&bilibili",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iQIYI%26bilibili.png"
     },
     {
       "name": "iQIYI",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iQIYI.png"
     },
     {
-      "name": "iQIYI&bilibili",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iQIYI%26bilibili.png"
+      "name": "iQIYI_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iQIYI_1.png"
+    },
+    {
+      "name": "ITV",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ITV.png"
     },
     {
       "name": "ITV_1",
@@ -689,10 +693,6 @@
     {
       "name": "ITV_2",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ITV_2.png"
-    },
-    {
-      "name": "ITV",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ITV.png"
     },
     {
       "name": "Japan",
@@ -727,12 +727,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png"
     },
     {
-      "name": "LA_Map",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/LA_Map.png"
-    },
-    {
       "name": "LA",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/LA.png"
+    },
+    {
+      "name": "LA_Map",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/LA_Map.png"
     },
     {
       "name": "Lab",
@@ -847,24 +847,28 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/NBC.png"
     },
     {
-      "name": "Netease_Music_Unlock",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music_Unlock.png"
-    },
-    {
       "name": "Netease_Music",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music.png"
     },
     {
-      "name": "Netflix_Letter",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png"
+      "name": "Netease_Music_Unlock",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music_Unlock.png"
     },
     {
       "name": "Netflix",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png"
     },
     {
+      "name": "Netflix_Letter",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png"
+    },
+    {
       "name": "Nfcloud",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Nfcloud.png"
+    },
+    {
+      "name": "niconico",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/niconico.png"
     },
     {
       "name": "niconico_1",
@@ -873,10 +877,6 @@
     {
       "name": "niconico_2",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/niconico_2.png"
-    },
-    {
-      "name": "niconico",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/niconico.png"
     },
     {
       "name": "Ninja",
@@ -931,16 +931,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PBS.png"
     },
     {
+      "name": "Peacock",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Peacock.png"
+    },
+    {
       "name": "Peacock_1",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Peacock_1.png"
     },
     {
       "name": "Peacock_2",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Peacock_2.png"
-    },
-    {
-      "name": "Peacock",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Peacock.png"
     },
     {
       "name": "PH",
@@ -959,12 +959,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Pirate_Nation.png"
     },
     {
+      "name": "PlayStation",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PlayStation.png"
+    },
+    {
       "name": "PlayStation_1",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PlayStation_1.png"
     },
     {
-      "name": "PlayStation",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PlayStation.png"
+      "name": "Pornhub",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Pornhub.png"
     },
     {
       "name": "Pornhub_1",
@@ -975,16 +979,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Pornhub_2.png"
     },
     {
-      "name": "Pornhub",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Pornhub.png"
+      "name": "PostBox",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PostBox.png"
     },
     {
       "name": "PostBox_1",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PostBox_1.png"
     },
     {
-      "name": "PostBox",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PostBox.png"
+      "name": "Prime_Video",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Prime_Video.png"
     },
     {
       "name": "Prime_Video_1",
@@ -993,10 +997,6 @@
     {
       "name": "Prime_Video_2",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Prime_Video_2.png"
-    },
-    {
-      "name": "Prime_Video",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Prime_Video.png"
     },
     {
       "name": "Proxy",
@@ -1019,12 +1019,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Qure.png"
     },
     {
-      "name": "Rainbow_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rainbow_1.png"
-    },
-    {
       "name": "Rainbow",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rainbow.png"
+    },
+    {
+      "name": "Rainbow_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rainbow_1.png"
     },
     {
       "name": "Reject",
@@ -1043,12 +1043,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png"
     },
     {
-      "name": "Round_Robin_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png"
-    },
-    {
       "name": "Round_Robin",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png"
+    },
+    {
+      "name": "Round_Robin_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png"
     },
     {
       "name": "RU",
@@ -1099,12 +1099,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png"
     },
     {
-      "name": "SSID_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SSID_1.png"
-    },
-    {
       "name": "SSID",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SSID.png"
+    },
+    {
+      "name": "SSID_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SSID_1.png"
     },
     {
       "name": "SSL",
@@ -1119,6 +1119,14 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Stack.png"
     },
     {
+      "name": "Star+",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Star%2B.png"
+    },
+    {
+      "name": "Star",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Star.png"
+    },
+    {
       "name": "Star_1",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Star_1.png"
     },
@@ -1127,24 +1135,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Star_2.png"
     },
     {
-      "name": "Star",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Star.png"
-    },
-    {
-      "name": "Star+",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Star%2B.png"
-    },
-    {
       "name": "STARZ",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/STARZ.png"
     },
     {
-      "name": "Static_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static_1.png"
-    },
-    {
       "name": "Static",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png"
+    },
+    {
+      "name": "Static_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static_1.png"
     },
     {
       "name": "Steam",
@@ -1179,12 +1179,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taobao.png"
     },
     {
+      "name": "Telegram",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
+    },
+    {
       "name": "Telegram_X",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram_X.png"
     },
     {
-      "name": "Telegram",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
+      "name": "TestFlight",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight.png"
     },
     {
       "name": "TestFlight_1",
@@ -1195,16 +1199,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight_2.png"
     },
     {
-      "name": "TestFlight",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight.png"
-    },
-    {
       "name": "TH",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TH.png"
     },
     {
       "name": "Thailand",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Thailand.png"
+    },
+    {
+      "name": "TIDAL",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TIDAL.png"
     },
     {
       "name": "TIDAL_1",
@@ -1215,8 +1219,8 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TIDAL_2.png"
     },
     {
-      "name": "TIDAL",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TIDAL.png"
+      "name": "TikTok",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png"
     },
     {
       "name": "TikTok_1",
@@ -1225,10 +1229,6 @@
     {
       "name": "TikTok_2",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_2.png"
-    },
-    {
-      "name": "TikTok",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png"
     },
     {
       "name": "TR",
@@ -1271,12 +1271,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Ukraine.png"
     },
     {
-      "name": "ULB_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB_1.png"
-    },
-    {
       "name": "ULB",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB.png"
+    },
+    {
+      "name": "ULB_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB_1.png"
     },
     {
       "name": "UN",
@@ -1291,12 +1291,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Nations.png"
     },
     {
-      "name": "United_States_Map",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States_Map.png"
-    },
-    {
       "name": "United_States",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png"
+    },
+    {
+      "name": "United_States_Map",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States_Map.png"
     },
     {
       "name": "Unlock",
@@ -1323,12 +1323,12 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ViuTV.png"
     },
     {
-      "name": "Want_Want_1",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Want_Want_1.png"
-    },
-    {
       "name": "Want_Want",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Want_Want.png"
+    },
+    {
+      "name": "Want_Want_1",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Want_Want_1.png"
     },
     {
       "name": "WeChat",
@@ -1339,24 +1339,24 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Weibo.png"
     },
     {
-      "name": "WeTV_Letter",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeTV_Letter.png"
-    },
-    {
       "name": "WeTV",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeTV.png"
+    },
+    {
+      "name": "WeTV_Letter",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeTV_Letter.png"
     },
     {
       "name": "WiFi",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WiFi.png"
     },
     {
-      "name": "Windows_11",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Windows_11.png"
-    },
-    {
       "name": "Windows",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Windows.png"
+    },
+    {
+      "name": "Windows_11",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Windows_11.png"
     },
     {
       "name": "World_Map",
@@ -1371,12 +1371,16 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Xbox.png"
     },
     {
+      "name": "Yahoo",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Yahoo.png"
+    },
+    {
       "name": "Yahoo_1",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Yahoo_1.png"
     },
     {
-      "name": "Yahoo",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Yahoo.png"
+      "name": "YouTube",
+      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"
     },
     {
       "name": "YouTube_Letter",
@@ -1385,10 +1389,6 @@
     {
       "name": "YouTube_Music",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube_Music.png"
-    },
-    {
-      "name": "YouTube",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"
     }
   ]
 }
